@@ -5,3 +5,5 @@ Trabajo Práctico perteneciente a la cátedra de Electrónica Digital 2.
 10% de conocimiento - 90% de fe 
 
 ELIJO CREER
+
+![Escudo de Belgrano](belgrano-black-logo-footylogos.svg)
