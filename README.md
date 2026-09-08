@@ -6,4 +6,4 @@ Trabajo Práctico perteneciente a la cátedra de Electrónica Digital 2.
 
 ELIJO CREER
 
-![Escudo de Belgrano](belgrano-black-logo-footylogos.svg)
+<img src="belgrano-black-logo-footylogos.svg" alt="Escudo de Belgrano" width="150">
