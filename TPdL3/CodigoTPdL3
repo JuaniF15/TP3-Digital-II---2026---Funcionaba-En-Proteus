@@ -1,10 +1,9 @@
-
+;------------------------------------------------------------------------------
     LIST P=16F887
     #INCLUDE <P16F887.INC>
 
     __CONFIG _CONFIG1, _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _MCLRE_ON & _CP_OFF & _CPD_OFF & _BOREN_ON & _IESO_OFF & _FCMEN_OFF & _LVP_OFF
     __CONFIG _CONFIG2, _WRT_OFF & _BOR4V_BOR40V
-
 ;------------------------------------------------------------------------------
     CBLOCK 0x70
         W_TEMP          
@@ -20,14 +19,12 @@
 
     #define BTN_EVT   FLAGS,0   
     #define BTN_LAST  FLAGS,1   
-
 ;------------------------------------------------------------------------------
     ORG 0x0000
     GOTO INICIO
 
     ORG 0x0004
     GOTO ISR
-
 ;------------------------------------------------------------------------------
     ORG 0x0010
 SEVEN_SEG
@@ -42,7 +39,6 @@ SEVEN_SEG
     RETLW 0x07   ; 7
     RETLW 0x7F   ; 8
     RETLW 0x6F   ; 9
-
 ;------------------------------------------------------------------------------
 ISR
     MOVWF W_TEMP
@@ -110,7 +106,6 @@ ISR_FIN
     SWAPF W_TEMP,F
     SWAPF W_TEMP,W
     RETFIE
-
 ;------------------------------------------------------------------------------
 INICIO
     BANKSEL ANSEL
@@ -131,7 +126,6 @@ INICIO
     BCF OPTION_REG,1
     BSF OPTION_REG,0
                              
-
     BANKSEL PORTA
     CLRF PORTA
     CLRF PORTB
